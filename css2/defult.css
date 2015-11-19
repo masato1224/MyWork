@@ -1,0 +1,12 @@
+a{
+  color: orange;
+}
+a.link{
+  color: red;
+}
+a.link2{
+  color: pink;
+}
+a#site{
+  color: black;
+}
