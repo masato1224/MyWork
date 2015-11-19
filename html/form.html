@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>初めてのHTML_form</title>
+  <link rel="stylesheet" href="MyStyles.css">
+</head>
+
+<body>
+  <article>
+    <h1>アンケート</h1>
+    <form action="index.html" method="post">
+      <p>
+        <label>
+          <input type="checkBox" name="phone" value="andoroid">android
+        </label>
+        <input type="checkBox" name="phone" value="iphone" id="iphone">
+        <label for="iphone">iphone</label>
+      </p>
+      <p>
+        <input type="radio" name="color" value="red">red
+        <input type="radio" name="color" value="blue">blue
+        <input type="radio" name="color" value="yellow" id="yellow">yellow
+      </p>
+      <p>
+        メールアドレス：
+        <input type="email" name="e-mail" size="50" value="zzzzz@zzzzz" maxlength="10" required> 個数：
+        <input type="number" name="count" value="50"> 誕生日
+        <input type="date" name="date">
+      </p>
+      <p>
+        都市：
+        <select name="city" multiple size="3">
+          <option value="nagoya">名古屋</option>
+          <option value="tokyo">東京</option>
+          <option value="osaka">大阪</option>
+          <option value="yokohama">横浜</option>
+        </select>
+      </p>
+      <p>
+        コメント：
+        <textarea name="name" rows="8" cols="40"></textarea>
+      </p>
+      <p>
+        <button type="submit" name="submit_button" disabled="true">
+          <strong>送信！！</strong>
+        </button>
+      </p>
+      <p>
+        <button type="button" name="button">処理</button>
+      </p>
+      <p>
+        <input type="password" name="password" placeholder="enter to pass">
+      </p>
+      <p>
+        <input type="hidden" name="h" value="aaaaa">
+      </p>
+      <p>
+        <input type="submit" value="送信">
+      </p>
+    </form>
+  </article>
+</body>
+
+</html>
