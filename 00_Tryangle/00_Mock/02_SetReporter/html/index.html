@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../components/loader.js"></script>
+    <link rel="stylesheet" href="../components/loader.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            var nowDate = new Date();
+            console.log(nowDate);
+            var fullYear = nowDate.getFullYear();
+            console.debug(fullYear)
+            var shortYear = String(fullYear).substr(2,2);
+            var heuseuYear = Number(shortYear) + 12;
+
+            document.getElementById('heisei-year').textContent = heuseuYear;
+            document.getElementById('year').textContent = fullYear;
+
+            var month = nowDate.getMonth() + 1;
+            console.log(month);
+            var day = nowDate.getDay() + 8;
+            console.log(day);
+
+            document.getElementById('month-val').textContent = month;
+            document.getElementById('day-val').textContent = day;
+
+            updateTime(nowDate);
+        })
+
+        function updateTime(nowDate){
+
+            var hh = nowDate.getHours();
+            var mm = nowDate.getMinutes();
+            var ss = nowDate.getSeconds();
+
+            document.getElementById('hh').textContent = hh;
+            document.getElementById('mm').textContent = mm;
+            document.getElementById('ss').textContent = ss;
+
+            //setInterval(function(){ updateTime(nowDate); },1000);
+        }
+    </script>
+</head>
+<body>
+    <div id="heisei">
+        今年は平成<span id="heisei-year"></span>年です。
+    </div>
+    <div id="date">
+        今日は<span id="month-val"></span>月 <span id="day-val"></span>日です。
+    </div>
+    <div id="time">
+        <span id="hh"></span> : <span id="mm"></span> : <span id="ss"></span>
+    </div>
+    <div id="ad">
+        A.D <span id="year"></span>
+    </div>
+</body>
+</html>
