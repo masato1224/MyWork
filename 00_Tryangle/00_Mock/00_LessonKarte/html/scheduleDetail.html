@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../components/loader.js"></script>
+    <link rel="stylesheet" href="../components/loader.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>予定詳細</title>
+    <script>
+    </script>
+</head>
+<body>
+  <h1>予定詳細</h1>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          タイトル：
+        </td>
+        <td>
+          <input type="text" name="title" placeholder="タイトル">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          種別：
+        </td>
+        <td>
+          <select name="kind">
+            <option value="1">セット</option>
+            <option value="2" selected>レッスン</option>
+            <option value="3">プライベート</option>
+            <option value="4">その他</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          日付：
+        </td>
+        <td>
+          <input type="date" name="date" placeholder="2015/11/01">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          時間：
+        </td>
+        <td>
+          <input type="time" name="begin" value="10:00"> ～
+          <input type="time" name="end" value="12:00">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          場所：
+        </td>
+        <td>
+          <input type="text" name="gimName" placeholder="ジム名">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          生徒：
+        </td>
+        <td>
+          <input type="text" name="student" value="岩山　登">
+          <button type="button" name="selectStudent">生徒一覧</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          コメント：
+        </td>
+        <td>
+          <textarea name="comment" rows="8" cols="40">第3回目</textarea>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <a href="./index.html">画面一覧へ戻る</a>
+  </p>
+</body>
+</html>
