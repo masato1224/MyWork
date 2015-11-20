@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="../components/loader.js"></script>
+  <link rel="stylesheet" href="../components/loader.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>課題詳細</title>
+  <script>
+  </script>
+</head>
+
+<body>
+  <h1>課題詳細</h1>
+  <h2>課題情報</h2>
+  <button type="button" name="edit">編集</button>
+  <hr>
+  <img src="../img/problem_Sample_blueline.jpg" style="max-width: 300px;max-height: 300px;" />
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          ジム：
+        </td>
+        <td>
+          <input type="text" name="gymName" value="カメロパルダリス">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          壁：
+        </td>
+        <td>
+          <select name="angle">
+            <option value="1">～90°</option>
+            <option value="2">90°</option>
+            <option value="3" selected>100°～120°</option>
+            <option value="4">120°～140°</option>
+            <option value="5">140°～160°</option>
+            <option value="6">160°～</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          グレード：
+        </td>
+        <td>
+          <select name="grade">
+            <option value="1D" selected>初段以上</option>
+            <option value="1Q">1級</option>
+            <option value="2Q">2級</option>
+            <option value="3Q">3級</option>
+            <option value="4Q">4級</option>
+            <option value="5Q">5級</option>
+            <option value="6Q">6級</option>
+            <option value="7Q">7級</option>
+            <option value="8Q">8級</option>
+            <option value="9Q">9級</option>
+            <option value="10Q">10級</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          キーホールド：
+        </td>
+        <td>
+          <select name="keyHold">
+            <option value="c">カチ</option>
+            <option value="g">ガバ</option>
+            <option value="s">スローバー</option>
+            <option value="p">ピンチ</option>
+            <option value="u">アンダー</option>
+            <option value="a">その他</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          系統：
+        </td>
+        <td>
+          <select name="kind">
+            <option value="p">パワー</option>
+            <option value="l">ランジ</option>
+            <option value="d">デッド</option>
+            <option value="t">テクニック</option>
+            <option value="b">バランス</option>
+            <option value="a">その他</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          色：
+        </td>
+        <td>
+          <div style="width:50px; height:50px; background-color: red;">
+          </div>
+          <button type="button" name="colorPicker">色選択</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          セッター：
+        </td>
+        <td>
+          <input type="text" name="setterName" value="平山ゆーじ">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          セット日：
+        </td>
+        <td>
+          <input type="date" name="date">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <a href="./index.html">画面一覧へ戻る</a>
+  </p>
+</body>
+
+</html>
