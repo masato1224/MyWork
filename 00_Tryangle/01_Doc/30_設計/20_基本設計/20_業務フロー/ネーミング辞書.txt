@@ -1,0 +1,15 @@
+セッター	SETTER
+名前	NAME
+課題	PROBLEM
+種類	KIND
+分類	CATEGORY
+ホールド	HOLD
+グレード	GRADE
+傾斜	SLANT
+地域	AREA
+施設	GYM
+詳細	DETAIL
+ユーザ	USER
+壁	WALL
+色	COLOR
+写真	PHOTO
