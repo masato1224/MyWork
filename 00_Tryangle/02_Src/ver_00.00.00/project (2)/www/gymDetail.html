@@ -1,0 +1,34 @@
+<ons-page id="gymDetail-page">
+    <ons-toolbar fixed-style>
+      <div class="left"><ons-back-button></ons-back-button></div>
+      <div class="center toolbar-txt">壁選択</div>
+      <div class="right">
+        <ons-toolbar-button ng-click="naviEdditGymInfo(gymInfo.id)">
+          <ons-icon icon="gear" fixed-width="false"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+    
+    <div class="man-image man-image-gym" ng-style="gymInfo.photoStyle">
+      <div class="gym-caption-bg">
+        <div class="gym-caption">
+          地域 ： {{gymInfo.areaName}}<br>
+          ジム名 ： {{gymInfo.name}}
+        </div>
+      </div>
+    </div>
+  
+    <ons-list class="list">
+        <ons-list-item class="list-item" modifier="chevron"  ng-repeat="wallInfo in gymInfo.wallList" ng-click="naviProblemList(gymInfo.id,wallInfo.id)">
+            <ons-row>
+              <ons-col width="160px">
+                <span class="Thumbnail-image Thumbnail-wall-image" ng-style="wallInfo.photoStyle"></span>
+              </ons-col>
+              <ons-col class="wall-slent">
+                {{wallInfo.name + "　" + wallInfo.slantName}}
+              </ons-col>
+            </ons-row>
+        </ons-list-item>
+    </ons-list>
+  <pre ng-show="isDebug">{{ gymInfo | json }}</pre>
+</ons-page>

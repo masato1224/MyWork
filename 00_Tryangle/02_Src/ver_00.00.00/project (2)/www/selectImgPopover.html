@@ -1,0 +1,14 @@
+<ons-template id="selectImgPopover.html">
+  <ons-dialog var="dialog" cancelable animation="none">
+    <ons-list class="list-noshadow">
+      <ons-list-item modifier="tappable" ng-click="getPictureFromCamera(onSuccessGetPicture,onFailGetPicture)">
+        <ons-icon icon="ion-camera"></ons-icon>  
+        写真を撮る
+      </ons-list-item>
+      <ons-list-item modifier="tappable" ng-click="getPictureFromGallery(onSuccessGetPicture,onFailGetPicture)">
+        <ons-icon icon="ion-images"></ons-icon>  
+        ライブラリから選択
+      </ons-list-item>
+    </ons-list>
+  </ons-dialog>
+</ons-template>

@@ -1,0 +1,25 @@
+<ons-page id="gymList-page">
+    <ons-toolbar  fixed-style>
+        <div class="left"><ons-back-button></ons-back-button></div>
+        <div class="center toolbar-txt">ジム選択</div>
+        <!--<div class="right">
+            <ons-toolbar-button class="toolbar-button">
+                <ons-icon icon="ion-plus" fixed-width="false"></ons-icon>
+            </ons-toolbar-button>
+        </div>-->
+    </ons-toolbar>
+
+    <ons-list class="list">
+      <ons-list-item class="list-item" modifier="chevron" ng-click="naviGymDetail(gym.gym_id)" ng-repeat="gym in gymList">
+        <ons-row>
+          <ons-col width="160px">
+          <span class="Thumbnail-image Thumbnail-gym-image" ng-style="gym.photoStyle"></span>
+          </ons-col>
+          <ons-col class="gym-name">
+            {{gym.gym_name}}
+          </ons-col>
+        </ons-row>
+      </ons-list-item>
+    </ons-list>
+    <pre ng-show="isDebug">{{ gymList | json }}</pre>
+</ons-page>

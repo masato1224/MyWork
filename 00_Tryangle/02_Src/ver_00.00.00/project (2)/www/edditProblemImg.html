@@ -1,0 +1,54 @@
+<ons-page id="edditProblemImg.html">
+
+  <ons-toolbar fixed-style>
+    <div class="left"><ons-back-button></ons-back-button></div>
+    <div class="center toolbar-txt">課題画像選択</div>
+  </ons-toolbar>
+
+  <ons-list class="list">
+      <ons-list-item modifier="tappable" ng-click="getPictureFromCamera(onSuccessGetProblemPicture,onFailGetPicture)">
+        <ons-icon icon="ion-camera"></ons-icon>  
+        写真を撮る
+      </ons-list-item>
+      <ons-list-item modifier="tappable" ng-click="getPictureFromGallery(onSuccessGetProblemPicture,onFailGetPicture)">
+        <ons-icon icon="ion-images"></ons-icon>  
+        ライブラリから選択
+      </ons-list-item>
+  </ons-list>
+  
+    <ons-template id="image.html">
+      <ons-page id="image-page">
+        <ons-toolbar>
+          <div class="left"><ons-back-button></ons-back-button></div>
+          <div class="center toolbar-txt">課題画像編集</div>
+        </ons-toolbar>
+        <div>
+          <nav class="navbar navbar-default navbar-fixed-top" style="top:60px;">
+            <div class="container-fluid">
+          		<div class="navbar-header">
+          			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample7">
+          				<span class="sr-only">Toggle navigation</span>
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>
+          			</button>
+          		</div>
+          		
+          		<div class="collapse navbar-collapse" id="navbarEexample7">
+                <ul class="nav navbar-nav">
+                  <li><a href="#" onClick="beginEddit()">編集開始</a></li>
+                  <li><a href="#" ng-click="startStanpModal.show()">スタート</a></li>
+                  <li><a href="#" ng-click="goalStanpModal.show()">ゴール</a></li>
+                </ul>
+                <button type="button" class="btn btn-primary navbar-btn navbar-right" style="margin-right:20px;" ng-click="endEddit()">完了</button>
+                
+          		</div>
+          	</div>
+          </nav>
+        </div>
+        <div id="img-area" style="margin-top:70px;">
+        </div>
+      </ons-page>
+    </ons-template>
+
+</ons-page>

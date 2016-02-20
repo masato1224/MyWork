@@ -1,0 +1,12 @@
+<ons-page id="yearList-page">
+        
+    <ons-toolbar>
+        <div class="left"><ons-back-button></ons-back-button></div>
+        <div class="center toolbar-txt">課題登録年選択</div>
+    </ons-toolbar>
+    <ons-list class="list">
+        <ons-list-item class="list-item year-name" onclick="naviMonthList()" modifier="chevron" ng-repeat="i in [2015,2014,2013,2012]">
+            {{i}}年
+        </ons-list-item>
+    </ons-list>
+</ons-page>

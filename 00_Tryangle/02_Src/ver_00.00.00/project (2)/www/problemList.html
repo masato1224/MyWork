@@ -1,0 +1,19 @@
+<ons-page id="problemList-page">
+
+  <ons-toolbar>
+    <div class="left"><ons-back-button></ons-back-button></div>
+    <div class="center toolbar-txt">課題一覧</div>
+  </ons-toolbar>
+  
+  <ons-list class="list" style="  margin-bottom: 0px;" >
+    <!--<ons-list-header class="problem-list-header" style="background-color:#d3d3d3; color:#606060">
+      <span style="line-height: 50px">{{char}}</span>
+    </ons-list-header>-->
+    <ons-list-item class="list-item" style="padding-bottom:10px">
+    <div style="margin-left:0px">
+      <span class="Thumbnail-image Thumbnail-problem-image" ng-style="problem.photoStyle" ng-repeat="problem in problemList" ng-click="naviProblemDetail(problem.gym_id, problem.problem_id)"></span>
+    </div>
+    </ons-list-item>
+  </ons-list>
+  <pre ng-show="isDebug">{{ problemList | json }}</pre>
+</ons-page>

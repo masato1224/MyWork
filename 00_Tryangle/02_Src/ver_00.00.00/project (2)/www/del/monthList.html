@@ -1,0 +1,13 @@
+<ons-page id="monthList-page">
+        
+    <ons-toolbar>
+        <div class="left"><ons-back-button></ons-back-button></div>
+        <div class="center toolbar-txt">課題登録月選択</div>
+    </ons-toolbar>
+    
+    <ons-list>
+        <ons-list-item class="list-item month-name"  onclick="naviProblemList()" modifier="chevron" ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12]">
+            {{i}}月
+        </ons-list-item>
+    </ons-list>
+</ons-page>

@@ -1,0 +1,201 @@
+body,html{
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.dummyPageWrap{
+  position: relative;
+}
+
+.dummyPage{
+  text-align: center;
+  position: absolute;
+	top: 400px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+  width: 400px;
+}
+
+.container{
+  margin: 20px 0px 0px 10px;
+}
+
+.toolbar-txt {
+  font-weight: bold;
+  color: white;
+}
+
+.center{
+  margin: 0,auto;
+}
+
+.list {
+  /*margin-top: 12px;*/
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+}
+
+.list-noshadow {
+  margin-top: 10px;
+  /*margin-bottom: 0px;*/
+  box-shadow: none;
+}
+
+.tab {
+  line-height: 1;
+}
+
+.tab-icon {
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-label {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.list-item {
+  line-height: 1;
+  padding-left: 20px;
+}
+
+.gym-name {
+  line-height: 150px;
+}
+
+.area-name {
+  line-height: 80px;
+}
+
+.year-name {
+  line-height: 80px;
+}
+
+.month-name {
+  line-height: 80px;
+}
+
+.setting-name {
+  line-height: 80px;
+}
+
+.problem-detail {
+  line-height: 50px;
+}
+
+.Thumbnail-image {
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #d3d3d3;
+  /*border: 2px solid #808080;*/
+}
+
+.Thumbnail-gym-image-eddit-page {
+  display: block;
+  text-align: center;
+  width: 200px; 
+  height: 150px;
+}
+
+.Thumbnail-problem-image-eddit-page {
+  display: block;
+  text-align: center;
+  width: 200px; 
+  height: 150px;
+}
+
+.Thumbnail-gym-image {
+  width: 130px;
+  height: 130px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 65px;
+}
+
+.Thumbnail-wall-image {
+  width: 130px;
+  height: 130px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 65px;
+}
+
+.Thumbnail-problem-image {
+  width: 330px;
+  height: 330px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 165px;
+}
+
+.man-image{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #1a1a1a;
+  /*border: 2px solid #1a1a1a; */
+}
+
+.man-image-gym{
+  height: 450px;
+  width: auto;
+}
+
+.man-problem-gym{
+  height: 600px;
+  width: auto;
+}
+
+.gym-caption{
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gym-caption-bg{
+  background-color: rgba(10,10,10,0.5);
+}
+
+.wall-slent {
+  line-height: 150px;
+}
+
+.color-pic {
+  min-width:30px;
+  height: 30px;
+  border-radius: 10px;
+  background-position: center center;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.converted-image {
+  max-width: 100%;
+}
+/*.converted-image-label-wrapper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 60px;
+  z-index: 2;
+}
+.converted-image-label {
+  display: inline-block;
+  background-color: black;
+  border-radius: 3px;
+  padding: 3px 12px;
+  color: white;
+  opacity: 0.7;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid #ccc;
+}*/

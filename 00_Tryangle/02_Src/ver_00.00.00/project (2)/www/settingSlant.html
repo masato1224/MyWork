@@ -1,0 +1,26 @@
+<ons-page id="settingSlant-page">
+        
+  <ons-toolbar  fixed-style>
+    <div class="left"><ons-back-button></ons-back-button></div>
+    <div class="center toolbar-txt">傾斜</div>
+  </ons-toolbar>
+    
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <div class="input-group" ng-repeat="slant in slantList">
+          <span class="input-group-addon">　{{slant.id}}　</span>
+          <input type="text" class="form-control input-lg" placeholder="傾斜を入力してください" ng-model="slant.slant">
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-danger btn-lg" ng-click="removeSlant($index)">削除</button>
+          </span>
+        </div>
+      </div>
+     <div class="form-group">
+        <button type="button" class="btn btn-primary" ng-click="addSlant()">　＋　</button>
+     </div>
+    <button type="button" class="btn btn-default btn-block btn-success btn-lg" style="line-height: 40px; margin-top:45px; height:60px;" ng-click="registerSlant()">登録</button>
+    </form>
+  </div>
+  <pre ng-show="isDebug">{{ slantList | json }}</pre>
+</ons-page>

@@ -1,0 +1,41 @@
+<ons-page id="problemDetail-page">
+
+    <ons-toolbar>
+        <div class="left"><ons-back-button></ons-back-button></div>
+        <div class="center toolbar-txt">課題詳細</div>
+        <div class="right">
+            <ons-toolbar-button ng-click="naviEdditProblemInfo(problemInfo.gymId,problemInfo.problemId)">
+                <ons-icon icon="gear" fixed-width="false"></ons-icon>
+            </ons-toolbar-button>
+        </div>        
+    </ons-toolbar>
+    
+    <div class="man-image man-problem-gym" ng-style="problemInfo.photoStyle"></div>
+    <ons-list class="list">
+        <ons-list-item class="list-item problem-detail">
+            {{problemInfo.gymName}}
+        </ons-list-item>
+        <ons-list-item class="list-item problem-detail">
+            {{problemInfo.wallName + "　" + problemInfo.slantName}}
+        </ons-list-item>
+        <ons-list-item class="list-item problem-detail">
+            {{problemInfo.gradeName}}
+        </ons-list-item>
+        <ons-list-item class="list-item problem-detail">
+            Intensity:{{problemInfo.intensity}}　Risk:{{problemInfo.risk}}　Complex:{{problemInfo.complex}}　AVG:{{problemInfo.avg()}}
+        </ons-list-item>
+        <ons-list-item class="list-item problem-detail">
+            <div style="height:50px;">
+              <div class="color-pic" id="problem-Color" ng-style="problemInfo.holdColorHexStyle">
+              </div>
+            </div>
+        </ons-list-item>
+        <ons-list-item class="list-item problem-detail">
+            {{problemInfo.setterName}}
+        </ons-list-item>
+        <ons-list-item class="list-item problem-detail">
+            {{problemInfo.setYmd}}
+        </ons-list-item>
+    </ons-list>
+    <pre ng-show="isDebug">{{ problemInfo | json }}</pre>
+</ons-page>

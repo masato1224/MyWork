@@ -1,0 +1,56 @@
+<ons-page id="edditGymInfo-page">
+  <ons-toolbar>
+    <div class="center toolbar-txt">ジム登録</div>
+  </ons-toolbar>
+
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="gym-name">ジム名 {{"NO." + gymInfo.id}}</label>
+        <input type="text" class="form-control input-lg" id="gym-name" placeholder="ジム名を入力してください" ng-model="gymInfo.name">
+        <input type="hidden" id="gym-id" ng-model="gymInfo.id">
+      </div>
+      <div class="form-group">
+        <label for="area">地域</label>
+        <select class="form-control input-lg" id="area" ng-model="gymInfo.area" ng-options="area.id as area.area for area in areaList">
+        </select>
+      </div>
+  		<div class="form-group">
+				<label for="gym-img">ジムイメージ選択</label>
+        <div id="gym-img" class="Thumbnail-image Thumbnail-gym-image-eddit-page"
+          ng-style="gymInfo.photoStyle"
+          ng-click="show('selectImgPopover.html',gymInfo)">
+          <ons-icon icon="ion-image" fixed-width="false" size="50px" style="margin-top:50px;"></ons-icon>
+        </div>
+        <!--<input type="hidden" id="gym-id" ng-model="gymInfo.photo">-->
+        <!--<input type="file" id="InputGymImage" class=" form-control input-lg">-->
+			</div>
+      <div class="form-group">
+        <label for="wall-img">壁</label>
+        <div class="input-group input-group-lg" style="margin-bottom:10px;" ng-repeat="wallInfo in gymInfo.wallList">
+          <span class="input-group-addon">{{wallInfo.id}}</span>
+          <input type="text" class="form-control" id="wall-name" placeholder="壁の名称を入力してください。" ng-model="wallInfo.name">
+          <select class="form-control " id="slent" ng-model="wallInfo.slant" ng-options="slant.id as slant.slant for slant in slantList">
+          <input type="text" class="form-control" style="height:54px;" disabled>
+          <span class="input-group-addon"  style="height:150px; width:200px; padding:0px;">
+            <div id={{'wall-img'+$index}} class="Thumbnail-image Thumbnail-gym-image-eddit-page"
+              ng-style="wallInfo.photoStyle"
+              ng-click="show('selectImgPopover.html',wallInfo)">
+              <ons-icon icon="ion-image" fixed-width="false" size="50px" style="margin-top:50px;"></ons-icon>
+            </div>
+          </span>
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-danger btn-lg" style="height:152px;" ng-click="removeWall($index)">削除</button>
+          </span>
+        </div>        
+
+      </div>
+      <div class="form-group">
+          <button type="button" class="btn btn-primary" ng-click="addWall()">　＋　</button>
+      </div>
+  		<button type="button" class="btn btn-default btn-block btn-success btn-lg" style="line-height: 40px; margin-top:45px; height:60px;" ng-click="registerGymInfo()" ng-show="gymInfo.isNew">登録</button>
+  		<button type="button" class="btn btn-default btn-block btn-success btn-lg" style="line-height: 40px; margin-top:45px; height:60px;" ng-click="registerGymInfo()" ng-hide="gymInfo.isNew">更新</button>
+		</form>
+  </div>
+  <pre ng-show="isDebug">{{ gymInfo | json }}</pre>
+</ons-page>

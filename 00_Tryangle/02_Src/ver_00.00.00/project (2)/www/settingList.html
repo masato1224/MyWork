@@ -1,0 +1,51 @@
+<ons-navigator var="app.navi">
+  <ons-page id="settingList-page">
+
+    <ons-toolbar fixed-style>
+      <div class="center toolbar-txt">設定一覧</div>
+    </ons-toolbar>
+  
+    <ons-list class="list">
+      <ons-list-item class="list-item setting-name" 
+        modifier="chevron" 
+        ng-click="getAreaList(true)">
+          地域
+      </ons-list-item>
+      <ons-list-item class="list-item setting-name" 
+        modifier="chevron" 
+        ng-click="getSlantList(true)">
+          傾斜
+      </ons-list-item>
+      <ons-list-item class="list-item setting-name" 
+        modifier="chevron" 
+        ng-click="getGradeList(true,'bg0')">
+        ボルダーグレード（Japan）
+      </ons-list-item>
+      <ons-list-item class="list-item setting-name" 
+        modifier="chevron" 
+        ng-click="getGradeList(true,'bg1')">
+        ボルダーグレード（USA）
+      </ons-list-item>
+      <ons-list-item class="list-item setting-name" 
+        modifier="chevron" 
+        ng-click="getGradeList(true,'bg2')">
+        ボルダーグレード（French）
+      </ons-list-item>
+      <ons-list-item class="list-item setting-name" 
+        modifier="chevron" 
+        ng-click="getGradeList(true,'lg0')">
+        リードグレード（Decimal）
+      </ons-list-item>
+      <ons-list-item class="list-item setting-name" 
+        modifier="chevron" 
+        ng-click="getGradeList(true,'lg1')">
+        リードグレード（French）
+      </ons-list-item>
+      <ons-list-item class="list-item setting-name" 
+        modifier="chevron" 
+        ng-click="getSetterList(true)">
+        セッター
+      </ons-list-item>
+    </ons-list>
+  </ons-page>
+</ons-navigator> 

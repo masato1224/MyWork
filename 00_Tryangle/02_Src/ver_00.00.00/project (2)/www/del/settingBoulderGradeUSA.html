@@ -1,0 +1,26 @@
+<ons-page id="settingBoulderGradeUSA-page">
+        
+  <ons-toolbar  fixed-style>
+    <div class="left"><ons-back-button></ons-back-button></div>
+    <div class="center toolbar-txt">ボルダーグレード（USA）</div>
+  </ons-toolbar>
+    
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <div class="input-group" ng-repeat="grade in boulderGradeUSAList">
+          <span class="input-group-addon">　{{grade.id}}　</span>
+          <input type="text" class="form-control input-lg" placeholder="グレードを入力してください" ng-model="grade.grade">
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-danger btn-lg" ng-click="removeBoulderGradeUSA($index)">削除</button>
+          </span>
+        </div>
+      </div>
+     <div class="form-group">
+        <button type="button" class="btn btn-primary" ng-click="addBoulderGradeUSA()">　＋　</button>
+     </div>
+    <button type="button" class="btn btn-default btn-block btn-success btn-lg" style="line-height: 40px; margin-top:45px; height:60px;" ng-click="registerBoulderGradeUSA()">登録</button>
+    </form>
+  </div>
+  <pre>{{ boulderGradeUSAList | json }}</pre>
+</ons-page>

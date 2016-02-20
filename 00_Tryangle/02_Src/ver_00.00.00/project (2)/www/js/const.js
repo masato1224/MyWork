@@ -1,0 +1,24 @@
+// This is a JavaScript file
+var CONST = {
+  DB_NAME: 'SetRecoder',
+  DB_VERSION: '1.0',
+  DB_DISPLAYNAME: 'SetRecoder',
+  DB_SIZE: 49000000,
+  
+  BOULDER_GRADE_JAPAN:'bg0',
+  BOULDER_GRADE_USA:'bg1',
+  BOULDER_GRADE_FRENCH:'bg2',
+  LEAD_GRADE_DECIMAL:'lg0',
+  LEAD_GRADE_FRENCH:'lg1',
+  
+  START_TOP:'1',
+  START_RIGHT:'2',
+  START_BOTTOM:'3',
+  START_LEFT:'4',
+
+  GOAL_TOP:'5',
+  GOAL_RIGHT:'6',
+  GOAL_BOTTOM:'7',
+  GOAL_LEFT:'8',
+ 
+};

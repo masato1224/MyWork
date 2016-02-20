@@ -1,0 +1,21 @@
+<ons-navigator var="app.navi">
+  <ons-page id="areaList-page">
+  
+    <ons-toolbar fixed-style>
+      <div class="center toolbar-txt">地域選択</div>
+      <!--<div class="right">
+        <ons-toolbar-button>
+          <ons-icon icon="ion-plus" fixed-width="false"></ons-icon>
+        </ons-toolbar-button>
+      </div>-->
+    </ons-toolbar>
+  
+    <ons-list class="list">
+      <ons-list-item class="area-name list-item" ng-click="naviGymList(area.id)" ng-repeat="area in existAreaList" modifier="chevron">
+        {{area.area}}
+      </ons-list-item>
+    </ons-list>
+    
+      <pre ng-show="isDebug">{{ existAreaList | json }}</pre>
+  </ons-page>
+</ons-navigator>
